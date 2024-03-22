@@ -1,8 +1,8 @@
 version: '3'
 services:
   nginx:
-    build: ./build/nginx
-    # image: nginx:latest
+    # build: ./build/nginx
+    image: nginx:latest
     container_name: nginx
     ports:
       - "8080:80"
