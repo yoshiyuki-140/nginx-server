@@ -1,4 +1,4 @@
-version: '3'
+# version: '3'
 services:
   nginx:
     image: nginx:latest
@@ -11,11 +11,10 @@ services:
 
   https-portal:
     image: steveltn/https-portal:latest
-    ports:
-        - '80:80'
-        - '443:443'
+    # ports:
+        # - '80:80'
+        # - '443:443'
     links:
-        # - wordpress
         - nginx
     restart: always
     # restart: unless-stopped
